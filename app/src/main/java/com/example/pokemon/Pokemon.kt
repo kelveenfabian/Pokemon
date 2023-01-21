@@ -8,12 +8,12 @@ data class Pokemon(
     @SerializedName("next")
     val next: String,
     @SerializedName("results")
-    val pokemon: List<PokemonSpecies>
+    val pokemon: List<PokemonSpecies>,
 )
 
 data class PokemonSpecies(
     @SerializedName("name")
     val name: String,
     @SerializedName("url")
-    val url: String
+    val url: String,
 )
